@@ -111,11 +111,6 @@ app.get('/messageToConsole', function(req, res) {
 
 });
 
-// twilio routes
-app.get('/messageToConsole', function(req, res) {
-  twilioService.responseMaker(req, res);
-});
-
 // start server
 app.listen(port);
 console.log('Listening on port ' + port + '...');
